@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <title>นิยมนิยาย2🥰</title>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="tasy.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src ="tast.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <a href="index.html">
+        <img src="https://cdn.pixabay.com/photo/2017/05/27/13/33/logo-2348459_960_720.jpg" class="logonav">
+      </a>
+
+      <div class="nav-profile">
+        <p class="nav-profile-name">Cart</p>
+        <div onclick="openCaet()" style="cursor: pointer;" class="nav-profile-cart">
+          <i class="fas fa-cart-shopping"></i>
+          <div id ="cartcount" class="cartcount" style="display: none;">
+            0
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="sidebar">
+      <input onkeyup="searchsometh(this)" id ="txt_search" type="text" class="sidebar-search" placeholder="Search something...">
+
+      <a href="index.html" class="sidebar-items">
+        Go back
+      </a>
+      <a href="หน้าหลัก.html" class="sidebar-items">
+        Try Reading
+      </a>     
+      <a onclick="searchproduct('All')" class="sidebar-items">
+        All 
+      </a>
+      <a onclick="searchproduct('Drama')" class="sidebar-items">
+        Drama
+      </a>
+      <a onclick="searchproduct('Romantic')" class="sidebar-items">
+        Romantic
+      </a>
+    </div>
+    </div>
+
+
+    <div id ="productlist"class="product">
+
+      <div class="product-items">
+        <img class="product-img" src="..." alt="">
+        <p style="font-size: 1.2vw;">...</p>   
+        <p stlye="font-size: 1vw;">...</p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div id ="modalDesc" class="modal " style="display: none;">
+  <div onclick="Closemodal()" class="modal-pg"> </div>
+  <div class="modal-page">
+    <h3>ข้อมูลเพิ่มเติม</h3>
+    <br>
+    <div class="modaldesc-content">
+        <img id="mdd-img" class ="modaldesc-img" src="Plan B รักพี่...ไม่มีหลอก.jpg" alt="">
+        <div class="modaldesc-detail">
+          <h2><p id="mdd-name" style="font-size: 1.vw;"> Plan B รักพี่...ไม่มีหลอก</p></h2>         
+          <h3><p id="mdd-price" style="font-size: 1.2vw;">490 บาท </p></h3>
+          <br>
+          <p id="mdd-desc" style="color:  rgb(74, 50, 74);">“ถ้าเราเริ่มต้นกันใหม่ด้วยสถานะพี่น้องพอจะทำให้บินกลับไปใช้ชีวิตปกติ ได้รึเปล่า”</p>
+        <br>
+      <div class="btn-control">
+        <button onclick="Closemodal()" class="btn">
+            Close
+        </button>
+        <button onclick="addtocart()" class="btn btm-buy">
+            Add to cart
+        </button>
+      </div>
+      
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalCart" class="modal" style="display: none;">
+  <div onclick="Closemodal()" class="modal-pg"> </div>
+  <div class="modal-page">
+    <h3>My cart</h3>
+    <br>
+        <div id="mycart"class="cartlist">
+
+         
+            
+ 
+
+         </div>
+         <div class="btn-control2">
+          <button onclick="Closemodal()" class="btn">
+            Close
+        </button>
+          <button onclick="Buymodal()"class="btn btm-buy2">
+              Buy
+          </button>
+        </div>
+      </div>
+  </div>
+
+</body>
+<script sre ="tast.js"></script>
+</html>
+

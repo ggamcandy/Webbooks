@@ -1,0 +1,20 @@
+.container1 {
+  background-color: antiquewhite;
+  width: 100%;
+  height: 50vw;
+}
+
+
+.modaldesc-content {
+  width: 100%;
+  display: flex;
+}
+.modaldesc-detail {
+  margin-left: 20px;
+}
+.modaldesc-img {
+  width: 20vw;
+  height: 20vw;
+  object-fit: cover;
+  border-radius: 10px;
+}
